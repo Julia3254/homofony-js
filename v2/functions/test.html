@@ -103,7 +103,7 @@
         }
 
         export default function rewrite(input) {
-            const words = input.toLowerCase().split(/[" "|"\n"]/g);
+            const words = input.toLowerCase().split(/[" "|"\n"|","|-]/g);
 
             const results = new Array();
             words.forEach((word) => {
